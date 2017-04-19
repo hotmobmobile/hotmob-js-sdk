@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html>
+<meta name="viewport" content="width=device-width,height=device-height,initial-scale=1">
+<head>
+<script type='text/javascript'>
+  var hotmob_tag = hotmob_tag || {};
+  hotmob_tag.cmd = hotmob_tag.cmd || [];
+  (function() {
+    var hm_ads = document.createElement('script');
+    hm_ads.async = true;
+    hm_ads.type = 'text/javascript';
+    var useSSL = 'https:' == document.location.protocol;
+    hm_ads.src = (useSSL ? 'https:' : 'http:') +
+      '//code.hot-mob.com/api/javascript/sdk4/hotmobtag_min.js';
+    var node = document.getElementsByTagName('script')[0];
+    node.parentNode.insertBefore(hm_ads, node);
+  })();
+</script>
+	<script type='text/javascript'>
+	
+		hotmob_tag.cmd.push(function() {
+			var googleDirect = document.getElementById("div-gpt-ad-1490090266953-0");
+			var googleNetwork = document.getElementById("div-gpt-ad-1490090798015-0");
+		
+			hotmob_tag.define('hm_javascript_4_0_DFP_demo_300x250', [[300, 250],[320, 50],[320, 100]] ,'banner','div-hotmob-ad-hm_javascript_4_0_DFP_demo_300x250-0');
+			hotmob_tag.features.isSmartBanner(false,300); 
+			//hotmob_tag.features.setStopCallingOnOSs(['windows','macos']);
+			hotmob_tag.callback.defineOnNoAdCallback(function(e){
+				console.log("No Ads on HOTMOB Network > DFP Network");
+				googleNetwork.style.display = "block";
+				googleDirect.style.display = "none";
+				googletag.cmd.push(function() {
+					googletag.defineSlot('/13648685/javascript_sdk_testing_network', [300, 250], 'div-gpt-ad-1490090798015-0').addService(googletag.pubads());
+					googletag.pubads().enableSingleRequest();
+					googletag.enableServices();
+				});
+				googletag.cmd.push(function() { googletag.display('div-gpt-ad-1490090798015-0'); });
+				/** callback function **/
+			});
+			hotmob_tag.callback.defineBeforeAdShowCallback(function(banner){ 
+				console.log("No Ads on DFP Direct > HOTMOB Network ");
+				var googleIframe = googleDirect.getElementsByTagName("iframe")[0];
+				googleIframe.style.display = "none";
+				googleDirect.style.height = "auto";
+				/** callback function **/
+			});
+		});
+	</script>
+
+<script async='async' src='https://www.googletagservices.com/tag/js/gpt.js'></script>
+<script>
+  var googletag = googletag || {};
+  googletag.cmd = googletag.cmd || [];
+</script>
+
+<script>
+  googletag.cmd.push(function() {
+    googletag.defineSlot('/13648685/javascript_sdk_testing_direct', [300, 250], 'div-gpt-ad-1490090266953-0').addService(googletag.pubads());
+    googletag.pubads().enableSingleRequest();
+    googletag.enableServices();
+  });
+</script>
+
+</head>
+<style>
+html{width: 100%; height: 100%;}
+* {-webkit-tap-highlight-color: rgba(0, 0, 0, 0); padding: 0;  margin: 0;}
+body {
+	background-color: #333;   height: 100%;  width: 100%;    
+	
+}
+p , h3	{
+    color: #aaa;
+margin: 10px 0;
+};
+img {border: 0; -webkit-touch-callout: none;}
+
+.inlineBlock {
+    width: 49%;
+    height: auto;
+    margin: 0.5%;
+    float: left;
+    display: inline-block;
+}
+
+@media screen and (max-width: 640px) {
+	.inlineBlock {
+		width: 99%;
+	}
+}
+
+.inlineBlock:nth-child(odd) {
+    float: right;
+}
+
+.number {
+    border-left: white 1px solid;
+    border-right: white 1px solid;
+    margin: 0;
+    color: white;
+    width: 49.5%;
+    text-align: center;
+}
+.container {
+    max-width: 1024px;
+    margin: auto;
+    background-color: #111;
+    padding: 15px;
+}
+</style>
+<body>
+	<div class="container">		
+	
+		<h3>The standard Lorem Ipsum passage, used since the 1500s</h3>
+		<p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
+		<hr style="margin: 12px;">
+		<div class="box">
+		<h2 style=' text-align: center;     color: #f2732f;'>Banner with Maximum Size - Limit By Parent Div ( Default ) </h3>
+		</div>
+		<div style=' text-align: center;     color: #f2732f;' id="number1" class="inlineBlock box number">Please scale the browser</div><div id="number2" style=' text-align: center;     color: #f2732f;' class="inlineBlock box number">Please scale the browser</div>
+		<div id="sampleBox" class="inlineBlock" >
+			<!-- /13648685/javascript_sdk_testing_direct -->
+			<div id='div-gpt-ad-1490090266953-0' style='height:250px; width:300px;'>
+				<script>
+					googletag.cmd.push(function() { googletag.display('div-gpt-ad-1490090266953-0'); });
+				</script>
+				<!-- hotmob banner -->
+				<div id='div-hotmob-ad-hm_javascript_4_0_DFP_demo_300x250-0' style='height:1px; width:300px;    margin: 0 auto;'></div>
+
+			</div>
+			<!-- /13648685/javascript_sdk_testing_network -->
+			<div id='div-gpt-ad-1490090798015-0' style='height:250px; width:300px;display:none;'></div>
+
+		</div>
+		
+		<div class="inlineBlock box">
+		<h3>The standard Lorem Ipsum passage, used since the 1500s</h3>
+		<p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
+		</div>
+		
+		<div class="inlineBlock box">
+		<h3>The standard Lorem Ipsum passage, used since the 1500s</h3>
+		<p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
+		</div>
+
+		<div id="sampleBox2" class="inlineBlock" >
+		<h2 style=' text-align: center;     color: #f2732f;' >Expandable Banner Size - 300px x 250px </h3>
+		</div>
+		
+		<div class="inlineBlock box">
+		<h3>The standard Lorem Ipsum passage, used since the 1500s</h3>
+		<p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
+		</div>
+
+		<div class="inlineBlock box">
+		<h3>The standard Lorem Ipsum passage, used since the 1500s</h3>
+		<p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
+		</div>
+		
+		<div id="sampleBox2" class="inlineBlock" >
+
+		</div>
+		
+		<div class="inlineBlock box">
+		<h3>The standard Lorem Ipsum passage, used since the 1500s</h3>
+		<p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
+		</div>
+		
+		<div class="inlineBlock box">
+		<h3>The standard Lorem Ipsum passage, used since the 1500s</h3>
+		<p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
+		</div>
+			
+		<div class="inlineBlock box">
+		<h3>The standard Lorem Ipsum passage, used since the 1500s</h3>
+		<p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
+		</div>
+		
+		<div style="clear: both;"></div> 
+	</div>
+</body>
+
+<script>
+window.onload = function(){
+var bannerResizeEvent = function(){
+	var number1 = document.getElementById('number1');
+	var number2 = document.getElementById('number2');
+	
+	number1.innerHTML = " - - " + number1.clientWidth + "px - - ";
+	number2.innerHTML = " - - " + number2.clientWidth + "px - - ";;
+	
+}
+hotmob_tag.mainManager.hotmobAddEventListener(window, 'load', bannerResizeEvent);
+hotmob_tag.mainManager.hotmobAddEventListener(window, 'resize', bannerResizeEvent);
+hotmob_tag.mainManager.hotmobAddEventListener(window, 'landscape', bannerResizeEvent);	
+hotmob_tag.mainManager.hotmobAddEventListener(window, 'portrait', bannerResizeEvent);
+hotmob_tag.mainManager.hotmobAddEventListener(window, 'scroll', bannerResizeEvent);
+};
+
+</script>
+
+</html>
