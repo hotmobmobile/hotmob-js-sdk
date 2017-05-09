@@ -2,6 +2,7 @@
 <html>
 <meta name="viewport" content="width=device-width,height=device-height,initial-scale=1">
 <head>
+
 <script type='text/javascript'>
   var hotmob_tag = hotmob_tag || {};
   hotmob_tag.cmd = hotmob_tag.cmd || [];
@@ -11,41 +12,11 @@
     hm_ads.type = 'text/javascript';
     var useSSL = 'https:' == document.location.protocol;
     hm_ads.src = (useSSL ? 'https:' : 'http:') +
-      '//code.hot-mob.com/api/javascript/sdk4/hotmobtag_min.js';
+      '//code.hotmobserver.com/api/javascript/sdk4/hotmobtag.js';
     var node = document.getElementsByTagName('script')[0];
     node.parentNode.insertBefore(hm_ads, node);
   })();
 </script>
-	<script type='text/javascript'>
-	
-		hotmob_tag.cmd.push(function() {
-			var googleDirect = document.getElementById("div-gpt-ad-1490090266953-0");
-			var googleNetwork = document.getElementById("div-gpt-ad-1490090798015-0");
-		
-			hotmob_tag.define('hm_javascript_4_0_DFP_demo_300x250', [[300, 250],[320, 50],[320, 100]] ,'banner','div-hotmob-ad-hm_javascript_4_0_DFP_demo_300x250-0');
-			hotmob_tag.features.isSmartBanner(false,300); 
-			//hotmob_tag.features.setStopCallingOnOSs(['windows','macos']);
-			hotmob_tag.callback.defineOnNoAdCallback(function(e){
-				console.log("No Ads on HOTMOB Network > DFP Network");
-				googleNetwork.style.display = "block";
-				googleDirect.style.display = "none";
-				googletag.cmd.push(function() {
-					googletag.defineSlot('/13648685/javascript_sdk_testing_network', [300, 250], 'div-gpt-ad-1490090798015-0').addService(googletag.pubads());
-					googletag.pubads().enableSingleRequest();
-					googletag.enableServices();
-				});
-				googletag.cmd.push(function() { googletag.display('div-gpt-ad-1490090798015-0'); });
-				/** callback function **/
-			});
-			hotmob_tag.callback.defineBeforeAdShowCallback(function(banner){ 
-				console.log("No Ads on DFP Direct > HOTMOB Network ");
-				var googleIframe = googleDirect.getElementsByTagName("iframe")[0];
-				googleIframe.style.display = "none";
-				googleDirect.style.height = "auto";
-				/** callback function **/
-			});
-		});
-	</script>
 
 <script async='async' src='https://www.googletagservices.com/tag/js/gpt.js'></script>
 <script>
@@ -55,7 +26,7 @@
 
 <script>
   googletag.cmd.push(function() {
-    googletag.defineSlot('/13648685/javascript_sdk_testing_direct', [300, 250], 'div-gpt-ad-1490090266953-0').addService(googletag.pubads());
+    googletag.defineSlot('/13648685/javascript_sdk_demo_3rd/javascript_sdk_demo_3rd_direct', [300, 250], 'div-gpt-ad-1494243709341-0').addService(googletag.pubads());
     googletag.pubads().enableSingleRequest();
     googletag.enableServices();
   });
@@ -119,17 +90,12 @@ img {border: 0; -webkit-touch-callout: none;}
 		</div>
 		<div style=' text-align: center;     color: #f2732f;' id="number1" class="inlineBlock box number">Please scale the browser</div><div id="number2" style=' text-align: center;     color: #f2732f;' class="inlineBlock box number">Please scale the browser</div>
 		<div id="sampleBox" class="inlineBlock" >
-			<!-- /13648685/javascript_sdk_testing_direct -->
-			<div id='div-gpt-ad-1490090266953-0' style='height:250px; width:300px;'>
-				<script>
-					googletag.cmd.push(function() { googletag.display('div-gpt-ad-1490090266953-0'); });
-				</script>
-				<!-- hotmob banner -->
-				<div id='div-hotmob-ad-hm_javascript_4_0_DFP_demo_300x250-0' style='height:1px; width:300px;    margin: 0 auto;'></div>
-
+			<!-- /13648685/javascript_sdk_demo_3rd/javascript_sdk_demo_3rd_direct -->
+			<div id='div-gpt-ad-1494243709341-0' style='height:250px; width:300px;'>
+			<script>
+			googletag.cmd.push(function() { googletag.display('div-gpt-ad-1494243709341-0'); });
+			</script>
 			</div>
-			<!-- /13648685/javascript_sdk_testing_network -->
-			<div id='div-gpt-ad-1490090798015-0' style='height:250px; width:300px;display:none;'></div>
 
 		</div>
 		
